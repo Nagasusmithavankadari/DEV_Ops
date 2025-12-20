@@ -1,0 +1,39 @@
+Virtualization:
+It allows one computer to run multiple OS
+you will be parting physical machine resource in virtual resource
+It allows isolation of environment
+each vm will have its own os
+
+2 types of hypervisor:
+1. bare metal :runs as base os, meaning for every os you setup, each os will have hyper visor, used for prod, ex: VMware esxi
+2. runs as software: host os wont have hypervisor, only guest os will have hyper visors, used for test and learn ex: oracle virtual box
+
+Oracle VM Issues:
+To install VM:
+1. Time Consuming
+2. So Many steps to install
+3. Human Error chances will be there
+4. Difficult to replica on many VM's
+5. Need to document very step
+
+all those above issues will be resolved by vagrants
+
+Vagrants
+1. No OS installation is needed
+free box will be available on vagrant cloud
+
+2. Vagrant File[its like a text file] :
+Manage all vm settings in a file
+vm changes through vagrant file
+provisioning is faster 
+
+3. Simple commands:
+vagrant init boxname
+vagrant up
+vagrant ssh
+vagrant halt
+vagrant destroy
+vagrant status
+vagrant list
+
+

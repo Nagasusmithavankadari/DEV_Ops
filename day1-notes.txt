@@ -1,0 +1,70 @@
+SDLC 
+
+Stages:
+Requirement Gathering --> Planning --> Designing --> Development --> Testing --> Deployment --> Maintence
+
+Models:
+Waterfall
+Agile
+Prototype etc
+
+In Agile model --> Whole project will be divided into sprints and development will be made a partially developed product at each sprint
+
+Problem with frequent deployments:
+Developer will be frequently deploying the codes, where OPS don't have clear instructions on how to deploy the code causes late deployment
+
+Here to resolve the issue:
+DEVOPS --> Developer + Operations team integrates and work to resolve the conflicts and ensures faster delivery.
+
+Stages in Devops:
+1. Developer commit the code 
+2. Code Test
+3. Code Analysis
+4. build the code
+5. Deployment of Software
+6. OPS Changes
+7. Software Testing
+8. Go Live
+9. UAT
+10. Maintenance
+
+DevOPS could be achieved and comprises CI and CD
+CI: Continous Integration
+CD: Continous Delivery
+
+CI:
+Problem: If code has been developed for 3 weeks without built without frequent built, and if errors occurs, then it will be very diffcult to identify and go back to sit and work.
+Goal: CI ensures to identify the build issues at the early stages 
+Cycle: Code --> Fetch --> Test --> Build --> Notify
+Tools:
+Various IDE's,
+build could be jar, war, exe, dll etc
+Includes stages of devops: 1, 2, 3, 4,5
+
+CD:
+Problem: There are high chances are deployment may fail because of various reasons, could be ops related
+Goal: CD ensures to identify the challenges to deploy at the early stages
+It includes server provisioning like networking, resource scaling, firewall changes etc
+Tools:
+Servers
+Databases
+etc
+includes stages of devops: 6, 7, 8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
