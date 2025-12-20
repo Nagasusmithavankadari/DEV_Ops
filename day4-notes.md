@@ -36,15 +36,14 @@ Tracks history of all the files, meaning track every change
 
 Its centralized vcs, where repo is maintained at each and every client unlike traditional approach where repo is present at server only
 
-**Git Commands:**
-To initialize repo: git init
-To clone repo: git clone <url_with_.git>
-Local to remote integration:
-	git config --user.name "<user_name>"
-	git config --user.email "<user_emailaddress>"
-	To add changes: git add . 
-	To commit changes: git commit -m "<commit_message>"
-	To add origin: git remote add origin
-	To Push: git push <url_repo.git>
+Git SSH Login to Github:
+***Steps:***
+	1. Open Git
+	2. Delete any ssh keys if existing [incase new user and this keys you are not using anywhere]: rm -rf .ssh/*
+	3. Create new ssh key: ssh-keygen 
+	4. Copy the .ssh/id_rsa.pub
+	5. Open Github --> Settings --> SSH and GPG keys --> New Ssh key --> add title --> Paste the public key which you have copied
+	6. Now SSH with github has been completed, you could clone any public repo using ssh url of the repo
 
-To Pull the changes to local: git pull
+**Git Tags:**
+Semantic Version: Major_release.minor_release.version --> now-a-days every software will follow this
