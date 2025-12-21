@@ -31,9 +31,19 @@ provisioning is faster
 vagrant init boxname
 vagrant up
 vagrant ssh
+Incase of multiple vagrants: vagrant ssh <vm_name>
 vagrant halt
 vagrant destroy
 vagrant status
 vagrant list
+varant box list --> To list the vagrant boxes
+To show vagrant statuses at global: vagrant global-status
+To prune: vagrant global-status prune
 
+When ever vagrant is created,
+guest system will be mapped with /vagrant volume [could be some other as well] 
+--> you will get to know when we run vagrant up command --> you could see this data in vagrant file as well
+# config.vm.synced_folder "../data", "/vagrant_data" --> /data --> host machine volume group has been mappedw
+with guest machine[vm] /vagrant_data folder
 
+Vagrant provisioning: which means, executing the commands immediately after booting.
